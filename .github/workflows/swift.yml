@@ -3,12 +3,12 @@ name: Swift
 on: [push]
 
 jobs:
-  build:
+  test:
 
     runs-on: macOS-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Select Xcode version
       run: sudo xcode-select -s '/Applications/Xcode_11.3.app/Contents/Developer'
     - name: Run tests
