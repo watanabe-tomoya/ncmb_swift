@@ -19,7 +19,7 @@ jobs:
            build
     - name: Run tests
       run: xcodebuild
-           -scheme NCMBTests
+           -scheme NCMB
            -sdk iphonesimulator
            -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max'
            clean test
